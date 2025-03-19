@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -28,8 +29,7 @@ function Footer() {
 
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non, 
-                            impedit rem itaque qui, debitis culpa eligendi, temporibus magnam quos doloremque ipsam enim ducimus eveniet 
-                            perferendis tempora quisquam pariatur tempore?
+                            impedit rem itaque qui, debitis culpa eligendi.
                         </p>
 
                         <div className='flex gap-8 items-center mt-5'>
@@ -54,8 +54,39 @@ function Footer() {
 
                     <div>
                         <h2 className="text-2xl font-semibold my-4">Pages</h2>
+                        <ul>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/">FAQs</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Contact</Link>
+                            </li>
+                        </ul>
                     </div>
-                    <div>3</div>
+
+                    <div>
+                    <h2 className="text-2xl font-semibold my-4">Categories</h2>
+                        <ul>
+                            <li>
+                                <Link to="/">Electronics</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Home & Kitchen</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Fashion</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Health & Beauty</Link>
+                            </li>
+                        </ul>
+                    </div>
                     <div>4</div>
                 </div>
             </div>
